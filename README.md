@@ -32,14 +32,14 @@ This project implements a comprehensive system for analyzing hotel booking data 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/hotel-booking-analytics.git
+   git clone https://github.com/rishabh-1509/hotel_chatbot.git
    cd hotel-booking-analytics
    ```
 
 2. Create a virtual environment:
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   venv\Scripts\activate
    ```
 
 3. Install dependencies:
