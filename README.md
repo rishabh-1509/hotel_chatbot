@@ -32,14 +32,14 @@ This project implements a comprehensive system for analyzing hotel booking data 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/hotel-booking-analytics.git
+   git clone https://github.com/rishabh-1509/hotel_chatbot.git
    cd hotel-booking-analytics
    ```
 
 2. Create a virtual environment:
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   venv\Scripts\activate
    ```
 
 3. Install dependencies:
@@ -56,18 +56,6 @@ This project implements a comprehensive system for analyzing hotel booking data 
 5. Run the application:
    ```bash
    python main.py
-   ```
-
-### Option 2: Docker Setup
-
-1. Build the Docker image:
-   ```bash
-   docker build -t hotel-booking-analytics .
-   ```
-
-2. Run the container:
-   ```bash
-   docker run -p 8000:8000 -v $(pwd)/data:/app/data hotel-booking-analytics
    ```
 
 ## API Usage
