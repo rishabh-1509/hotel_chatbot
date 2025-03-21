@@ -58,18 +58,6 @@ This project implements a comprehensive system for analyzing hotel booking data 
    python main.py
    ```
 
-### Option 2: Docker Setup
-
-1. Build the Docker image:
-   ```bash
-   docker build -t hotel-booking-analytics .
-   ```
-
-2. Run the container:
-   ```bash
-   docker run -p 8000:8000 -v $(pwd)/data:/app/data hotel-booking-analytics
-   ```
-
 ## API Usage
 
 ### Get Analytics Insights
