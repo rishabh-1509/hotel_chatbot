@@ -713,7 +713,7 @@ app = FastAPI(
     lifespan=lifespan
 )
 
-def main_notebook():
+def main():
     """Main function to run the system without starting the web server."""
     # Initialize the processor
     processor = HotelBookingProcessor()
@@ -756,9 +756,8 @@ def main_notebook():
         print(f"Has Graph: {'Yes' if result.get('graph') else 'No'}")
         print(f"Response time: {result['response_time']:.2f} seconds")
     
-    # Return the processor and qa_system
-    return processor, qa_system
+    uvicorn.run(app, host="0.0.0.0", port=8000)
 
-# Run the main notebook function if script is executed directly
+# Run the main notebook function 
 if __name__ == "__main__":
-    processor, qa_system = main_notebook()
+    main()
